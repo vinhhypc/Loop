@@ -13,16 +13,16 @@
 <script>
     let password = "12345";
     let input = prompt("Enter your password to login");
-    let count =0;
-    for (count =0;count<=5;count++)
+    let count =4;
+    for (count =4;count>=0;count--)
         if (input == password){
             alert("Congratulation!");
             break;
-        }else if(count < 4){
-            input =prompt("Retype your password");
+        }else if(count > 0){
+            input =prompt("Retype your password.You have "+ count +" left");
             continue;
         }else {
-            alert("You you entered more than 5 times");
+            alert("You entered more than 5 times");
             break;
         } 
 </script>
